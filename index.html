@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="表示方法を選んで英単語を学習するアプリです。">
+  <title>英単語学習アプリ</title>
+  <!-- アプリのスタイルを外部CSSファイルから読み込みます。 -->
+  <link rel="stylesheet" href="style.css">
+  <!-- アプリの処理を外部JavaScriptファイルから読み込みます。 -->
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <header class="app-header">
+    <!-- アプリのタイトルを表示します。 -->
+    <h1 class="app-title">英単語学習アプリ</h1>
+  </header>
+
+  <main class="app-main">
+    <!-- 読み込みや保存などの結果を利用者に知らせます。 -->
+    <p id="app-message" class="app-message" role="status" aria-live="polite" hidden></p>
+
+    <!-- 初回起動時に表示する、学習方法の設定画面です。 -->
+    <section id="settings-screen" class="screen settings-screen" aria-labelledby="settings-title">
+      <h2 id="settings-title">学習方法の設定</h2>
+      <p>学習中に表示する内容を選んでください。</p>
+
+      <!-- 表示方法の選択肢をまとめています。 -->
+      <fieldset class="display-options">
+        <legend>英単語の表示方法</legend>
+
+        <!-- 日本語訳のみを表示する設定です。 -->
+        <div class="display-option">
+          <input type="radio" id="display-translation" name="display-mode" value="translation" checked>
+          <label for="display-translation">日本語訳のみ</label>
+        </div>
+
+        <!-- 画像のみを表示する設定です。 -->
+        <div class="display-option">
+          <input type="radio" id="display-image" name="display-mode" value="image">
+          <label for="display-image">画像のみ</label>
+        </div>
+
+        <!-- 日本語訳と画像の両方を表示する設定です。 -->
+        <div class="display-option">
+          <input type="radio" id="display-both" name="display-mode" value="both">
+          <label for="display-both">日本語訳＋画像</label>
+        </div>
+      </fieldset>
+
+      <!-- 選択した表示方法で学習画面を開始します。 -->
+      <button id="start-learning-button" class="button button-primary" type="button">学習開始</button>
+    </section>
+
+    <!-- 学習する英単語と、選択した表示方法に応じた情報を表示します。 -->
+    <section id="learning-screen" class="screen learning-screen" aria-labelledby="learning-title" hidden>
+      <div class="learning-heading-row">
+        <h2 id="learning-title">英単語を学習しましょう</h2>
+        <!-- 品詞別の単語一覧メニューを開閉します。 -->
+        <div class="word-menu-container">
+          <button
+            id="word-menu-button"
+            class="button word-menu-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="word-navigation-menu"
+            aria-label="品詞別の単語メニューを開く"
+          >
+            <span aria-hidden="true">☰</span>
+            <span class="word-menu-button-label">単語一覧</span>
+          </button>
+          <!-- カテゴリと単語一覧はJavaScriptから生成します。 -->
+          <nav id="word-navigation-menu" class="word-navigation-menu" aria-label="品詞別単語一覧" hidden></nav>
+        </div>
+      </div>
+
+      <!-- JavaScriptから現在の英単語を挿入します。 -->
+      <div class="word-card" aria-live="polite">
+        <!-- 単語一覧内の番号をJavaScriptから表示します。 -->
+        <p id="word-number" class="word-number"></p>
+        <p class="word-label">英単語</p>
+        <p id="english-word" class="english-word"></p>
+        <!-- IPA表記と品詞を横並びで表示します。ˈは第一アクセント、ˌは第二アクセントです。 -->
+        <p class="pronunciation-label">発音・アクセント（米音IPA）</p>
+        <div class="word-pronunciation-details">
+          <p id="word-pronunciation" class="word-pronunciation"></p>
+          <p id="word-part-of-speech" class="word-part-of-speech"></p>
+        </div>
+
+        <!-- 日本語訳の表示領域です。表示方法に応じてJavaScriptで切り替えます。 -->
+        <div id="translation-area" class="translation-area">
+          <h3 class="detail-heading">日本語訳</h3>
+          <p id="japanese-translation" class="japanese-translation"></p>
+        </div>
+
+        <!-- 画像の表示領域です。画像のURLと代替テキストをJavaScriptから設定します。 -->
+        <div id="image-area" class="image-area">
+          <h3 class="detail-heading">イメージ</h3>
+          <img id="word-image" class="word-image" alt="">
+          <!-- 画像が設定されていない、または読み込めない場合に表示します。 -->
+          <p id="image-placeholder" class="image-placeholder" hidden>この単語の画像を表示できません。</p>
+        </div>
+      </div>
+
+      <!-- 単語の移動、発音再生、表示方法の変更を行います。 -->
+      <nav class="learning-controls" aria-label="学習操作">
+        <button id="previous-word-button" class="button" type="button">戻る</button>
+        <button id="play-audio-button" class="button" type="button">音声再生</button>
+        <button id="next-word-button" class="button button-primary" type="button">次へ</button>
+        <button id="open-settings-button" class="button" type="button">設定</button>
+      </nav>
+    </section>
+  </main>
+</body>
+</html>

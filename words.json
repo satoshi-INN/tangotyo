@@ -1,0 +1,804 @@
+{
+  "words": [
+    {
+      "id": "word001",
+      "english": "apple",
+      "pronunciation": "/ˈæpəl/",
+      "partOfSpeech": "名詞",
+      "translation": "りんご",
+      "image": "images/apple.png"
+    },
+    {
+      "id": "word002",
+      "english": "book",
+      "pronunciation": "/bʊk/",
+      "partOfSpeech": "名詞",
+      "translation": "本",
+      "image": "images/book.png"
+    },
+    {
+      "id": "word003",
+      "english": "bird",
+      "pronunciation": "/bɝːd/",
+      "partOfSpeech": "名詞",
+      "translation": "鳥",
+      "image": "images/bird.png"
+    },
+    {
+      "id": "word004",
+      "english": "beauty",
+      "pronunciation": "/ˈbjuːti/",
+      "partOfSpeech": "名詞",
+      "translation": "美しさ",
+      "image": "images/beauty.png"
+    },
+    {
+      "id": "word005",
+      "english": "run",
+      "pronunciation": "/rʌn/",
+      "partOfSpeech": "動詞",
+      "translation": "走る",
+      "image": "images/run.png"
+    },
+    {
+      "id": "word006",
+      "english": "swim",
+      "pronunciation": "/swɪm/",
+      "partOfSpeech": "動詞",
+      "translation": "泳ぐ",
+      "image": "images/swim.png"
+    },
+    {
+      "id": "word007",
+      "english": "possible",
+      "pronunciation": "/ˈpɑsəbəl/",
+      "partOfSpeech": "形容詞",
+      "translation": "可能な",
+      "image": "images/possible.png"
+    },
+    {
+      "id": "word008",
+      "english": "physical",
+      "pronunciation": "/ˈfɪzɪkəl/",
+      "partOfSpeech": "形容詞",
+      "translation": "身体の",
+      "image": "images/physical.png"
+    },
+    {
+      "id": "word009",
+      "english": "imagine",
+      "pronunciation": "/ɪˈmædʒɪn/",
+      "partOfSpeech": "動詞",
+      "translation": "想像する",
+      "image": "images/imagine.png"
+    },
+    {
+      "id": "word010",
+      "english": "algorithm",
+      "pronunciation": "/ˈælɡəˌrɪðəm/",
+      "partOfSpeech": "名詞",
+      "translation": "アルゴリズム",
+      "image": "images/algorithm.png"
+    },
+    {
+      "id": "word011",
+      "english": "dog",
+      "pronunciation": "/dɔɡ/",
+      "partOfSpeech": "名詞",
+      "translation": "犬",
+      "image": "images/dog.png"
+    },
+    {
+      "id": "word012",
+      "english": "tree",
+      "pronunciation": "/triː/",
+      "partOfSpeech": "名詞",
+      "translation": "木",
+      "image": "images/tree.png"
+    },
+    {
+      "id": "word013",
+      "english": "house",
+      "pronunciation": "/haʊs/",
+      "partOfSpeech": "名詞",
+      "translation": "家",
+      "image": "images/house.png"
+    },
+    {
+      "id": "word014",
+      "english": "flower",
+      "pronunciation": "/ˈflaʊər/",
+      "partOfSpeech": "名詞",
+      "translation": "花",
+      "image": "images/flower.png"
+    },
+    {
+      "id": "word015",
+      "english": "hope",
+      "pronunciation": "/hoʊp/",
+      "partOfSpeech": "名詞",
+      "translation": "希望",
+      "image": "images/hope.png"
+    },
+    {
+      "id": "word016",
+      "english": "dream",
+      "pronunciation": "/driːm/",
+      "partOfSpeech": "名詞",
+      "translation": "夢",
+      "image": "images/dream.png"
+    },
+    {
+      "id": "word017",
+      "english": "walk",
+      "pronunciation": "/wɔk/",
+      "partOfSpeech": "動詞",
+      "translation": "歩く",
+      "image": "images/walk.png"
+    },
+    {
+      "id": "word018",
+      "english": "jump",
+      "pronunciation": "/dʒʌmp/",
+      "partOfSpeech": "動詞",
+      "translation": "跳ぶ",
+      "image": "images/jump.png"
+    },
+    {
+      "id": "word019",
+      "english": "throw",
+      "pronunciation": "/θroʊ/",
+      "partOfSpeech": "動詞",
+      "translation": "投げる",
+      "image": "images/throw.png"
+    },
+    {
+      "id": "word020",
+      "english": "think",
+      "pronunciation": "/θɪŋk/",
+      "partOfSpeech": "動詞",
+      "translation": "考える",
+      "image": "images/think.png"
+    },
+    {
+      "id": "word021",
+      "english": "believe",
+      "pronunciation": "/bɪˈliːv/",
+      "partOfSpeech": "動詞",
+      "translation": "信じる",
+      "image": "images/believe.png"
+    },
+    {
+      "id": "word022",
+      "english": "red",
+      "pronunciation": "/rɛd/",
+      "partOfSpeech": "形容詞",
+      "translation": "赤い",
+      "image": "images/red.png"
+    },
+    {
+      "id": "word023",
+      "english": "tall",
+      "pronunciation": "/tɔl/",
+      "partOfSpeech": "形容詞",
+      "translation": "背が高い",
+      "image": "images/tall.png"
+    },
+    {
+      "id": "word024",
+      "english": "important",
+      "pronunciation": "/ɪmˈpɔrtənt/",
+      "partOfSpeech": "形容詞",
+      "translation": "重要な",
+      "image": "images/important.png"
+    },
+    {
+      "id": "word025",
+      "english": "quickly",
+      "pronunciation": "/ˈkwɪkli/",
+      "partOfSpeech": "副詞",
+      "translation": "速く",
+      "image": "images/quickly.png"
+    },
+    {
+      "id": "word026",
+      "english": "maybe",
+      "pronunciation": "/ˈmeɪbi/",
+      "partOfSpeech": "副詞",
+      "translation": "たぶん",
+      "image": "images/maybe.png"
+    },
+    {
+      "id": "word027",
+      "english": "bridge",
+      "pronunciation": "/brɪdʒ/",
+      "partOfSpeech": "名詞",
+      "translation": "橋",
+      "image": "images/bridge.png"
+    },
+    {
+      "id": "word028",
+      "english": "mountain",
+      "pronunciation": "/ˈmaʊntən/",
+      "partOfSpeech": "名詞",
+      "translation": "山",
+      "image": "images/mountain.png"
+    },
+    {
+      "id": "word029",
+      "english": "mirror",
+      "pronunciation": "/ˈmɪrər/",
+      "partOfSpeech": "名詞",
+      "translation": "鏡",
+      "image": "images/mirror.png"
+    },
+    {
+      "id": "word030",
+      "english": "ladder",
+      "pronunciation": "/ˈlædər/",
+      "partOfSpeech": "名詞",
+      "translation": "はしご",
+      "image": "images/ladder.png"
+    },
+    {
+      "id": "word031",
+      "english": "engine",
+      "pronunciation": "/ˈɛndʒən/",
+      "partOfSpeech": "名詞",
+      "translation": "エンジン",
+      "image": "images/engine.png"
+    },
+    {
+      "id": "word032",
+      "english": "helmet",
+      "pronunciation": "/ˈhɛlmət/",
+      "partOfSpeech": "名詞",
+      "translation": "ヘルメット",
+      "image": "images/helmet.png"
+    },
+    {
+      "id": "word033",
+      "english": "microscope",
+      "pronunciation": "/ˈmaɪkrəˌskoʊp/",
+      "partOfSpeech": "名詞",
+      "translation": "顕微鏡",
+      "image": "images/microscope.png"
+    },
+    {
+      "id": "word034",
+      "english": "skeleton",
+      "pronunciation": "/ˈskɛlətən/",
+      "partOfSpeech": "名詞",
+      "translation": "骨格",
+      "image": "images/skeleton.png"
+    },
+    {
+      "id": "word035",
+      "english": "climb",
+      "pronunciation": "/klaɪm/",
+      "partOfSpeech": "動詞",
+      "translation": "登る",
+      "image": "images/climb.png"
+    },
+    {
+      "id": "word036",
+      "english": "crawl",
+      "pronunciation": "/krɔl/",
+      "partOfSpeech": "動詞",
+      "translation": "這う",
+      "image": "images/crawl.png"
+    },
+    {
+      "id": "word037",
+      "english": "dig",
+      "pronunciation": "/dɪɡ/",
+      "partOfSpeech": "動詞",
+      "translation": "掘る",
+      "image": "images/dig.png"
+    },
+    {
+      "id": "word038",
+      "english": "fold",
+      "pronunciation": "/foʊld/",
+      "partOfSpeech": "動詞",
+      "translation": "折りたたむ",
+      "image": "images/fold.png"
+    },
+    {
+      "id": "word039",
+      "english": "pour",
+      "pronunciation": "/pɔr/",
+      "partOfSpeech": "動詞",
+      "translation": "注ぐ",
+      "image": "images/pour.png"
+    },
+    {
+      "id": "word040",
+      "english": "squeeze",
+      "pronunciation": "/skwiːz/",
+      "partOfSpeech": "動詞",
+      "translation": "絞る",
+      "image": "images/squeeze.png"
+    },
+    {
+      "id": "word041",
+      "english": "kneel",
+      "pronunciation": "/niːl/",
+      "partOfSpeech": "動詞",
+      "translation": "ひざまずく",
+      "image": "images/kneel.png"
+    },
+    {
+      "id": "word042",
+      "english": "rough",
+      "pronunciation": "/rʌf/",
+      "partOfSpeech": "形容詞",
+      "translation": "ざらざらした",
+      "image": "images/rough.png"
+    },
+    {
+      "id": "word043",
+      "english": "smooth",
+      "pronunciation": "/smuːð/",
+      "partOfSpeech": "形容詞",
+      "translation": "なめらかな",
+      "image": "images/smooth.png"
+    },
+    {
+      "id": "word044",
+      "english": "transparent",
+      "pronunciation": "/trænsˈpɛrənt/",
+      "partOfSpeech": "形容詞",
+      "translation": "透明な",
+      "image": "images/transparent.png"
+    },
+    {
+      "id": "word045",
+      "english": "fragile",
+      "pronunciation": "/ˈfrædʒəl/",
+      "partOfSpeech": "形容詞",
+      "translation": "壊れやすい",
+      "image": "images/fragile.png"
+    },
+    {
+      "id": "word046",
+      "english": "slippery",
+      "pronunciation": "/ˈslɪpəri/",
+      "partOfSpeech": "形容詞",
+      "translation": "滑りやすい",
+      "image": "images/slippery.png"
+    },
+    {
+      "id": "word047",
+      "english": "gently",
+      "pronunciation": "/ˈdʒɛntli/",
+      "partOfSpeech": "副詞",
+      "translation": "優しく",
+      "image": "images/gently.png"
+    },
+    {
+      "id": "word048",
+      "english": "vertically",
+      "pronunciation": "/ˈvɝtɪkli/",
+      "partOfSpeech": "副詞",
+      "translation": "垂直に",
+      "image": "images/vertically.png"
+    },
+    {
+      "id": "word049",
+      "english": "apparently",
+      "pronunciation": "/əˈpɛrəntli/",
+      "partOfSpeech": "副詞",
+      "translation": "見たところでは",
+      "image": "images/apparently.png"
+    },
+    {
+      "id": "word050",
+      "english": "theoretically",
+      "pronunciation": "/ˌθiəˈrɛtɪkli/",
+      "partOfSpeech": "副詞",
+      "translation": "理論上は",
+      "image": "images/theoretically.png"
+    },
+    {
+      "id": "word051",
+      "english": "freedom",
+      "pronunciation": "/ˈfriːdəm/",
+      "partOfSpeech": "名詞",
+      "translation": "自由",
+      "image": "images/freedom.png"
+    },
+    {
+      "id": "word052",
+      "english": "justice",
+      "pronunciation": "/ˈdʒʌstɪs/",
+      "partOfSpeech": "名詞",
+      "translation": "正義",
+      "image": "images/justice.png"
+    },
+    {
+      "id": "word053",
+      "english": "courage",
+      "pronunciation": "/ˈkɝɪdʒ/",
+      "partOfSpeech": "名詞",
+      "translation": "勇気",
+      "image": "images/courage.png"
+    },
+    {
+      "id": "word054",
+      "english": "knowledge",
+      "pronunciation": "/ˈnɑlɪdʒ/",
+      "partOfSpeech": "名詞",
+      "translation": "知識",
+      "image": "images/knowledge.png"
+    },
+    {
+      "id": "word055",
+      "english": "confidence",
+      "pronunciation": "/ˈkɑnfɪdəns/",
+      "partOfSpeech": "名詞",
+      "translation": "自信",
+      "image": "images/confidence.png"
+    },
+    {
+      "id": "word056",
+      "english": "responsibility",
+      "pronunciation": "/rɪˌspɑnsəˈbɪləti/",
+      "partOfSpeech": "名詞",
+      "translation": "責任",
+      "image": "images/responsibility.png"
+    },
+    {
+      "id": "word057",
+      "english": "opportunity",
+      "pronunciation": "/ˌɑpərˈtuːnəti/",
+      "partOfSpeech": "名詞",
+      "translation": "機会",
+      "image": "images/opportunity.png"
+    },
+    {
+      "id": "word058",
+      "english": "memory",
+      "pronunciation": "/ˈmɛməri/",
+      "partOfSpeech": "名詞",
+      "translation": "記憶",
+      "image": "images/memory.png"
+    },
+    {
+      "id": "word059",
+      "english": "identity",
+      "pronunciation": "/aɪˈdɛntəti/",
+      "partOfSpeech": "名詞",
+      "translation": "同一性",
+      "image": "images/identity.png"
+    },
+    {
+      "id": "word060",
+      "english": "ambition",
+      "pronunciation": "/æmˈbɪʃən/",
+      "partOfSpeech": "名詞",
+      "translation": "野心",
+      "image": "images/ambition.png"
+    },
+    {
+      "id": "word061",
+      "english": "consider",
+      "pronunciation": "/kənˈsɪdər/",
+      "partOfSpeech": "動詞",
+      "translation": "よく考える",
+      "image": "images/consider.png"
+    },
+    {
+      "id": "word062",
+      "english": "recognize",
+      "pronunciation": "/ˈrɛkəɡnaɪz/",
+      "partOfSpeech": "動詞",
+      "translation": "認知する",
+      "image": "images/recognize.png"
+    },
+    {
+      "id": "word063",
+      "english": "assume",
+      "pronunciation": "/əˈsuːm/",
+      "partOfSpeech": "動詞",
+      "translation": "思い込む",
+      "image": "images/assume.png"
+    },
+    {
+      "id": "word064",
+      "english": "predict",
+      "pronunciation": "/prɪˈdɪkt/",
+      "partOfSpeech": "動詞",
+      "translation": "予測する",
+      "image": "images/predict.png"
+    },
+    {
+      "id": "word065",
+      "english": "evaluate",
+      "pronunciation": "/ɪˈvæljuˌeɪt/",
+      "partOfSpeech": "動詞",
+      "translation": "評価する",
+      "image": "images/evaluate.png"
+    },
+    {
+      "id": "word066",
+      "english": "doubt",
+      "pronunciation": "/daʊt/",
+      "partOfSpeech": "動詞",
+      "translation": "疑う",
+      "image": "images/doubt.png"
+    },
+    {
+      "id": "word067",
+      "english": "interpret",
+      "pronunciation": "/ɪnˈtɝprət/",
+      "partOfSpeech": "動詞",
+      "translation": "解釈する",
+      "image": "images/interpret.png"
+    },
+    {
+      "id": "word068",
+      "english": "necessary",
+      "pronunciation": "/ˈnɛsəˌsɛri/",
+      "partOfSpeech": "形容詞",
+      "translation": "必要な",
+      "image": "images/necessary.png"
+    },
+    {
+      "id": "word069",
+      "english": "effective",
+      "pronunciation": "/ɪˈfɛktɪv/",
+      "partOfSpeech": "形容詞",
+      "translation": "効果的な",
+      "image": "images/effective.png"
+    },
+    {
+      "id": "word070",
+      "english": "reasonable",
+      "pronunciation": "/ˈriːzənəbəl/",
+      "partOfSpeech": "形容詞",
+      "translation": "合理的な",
+      "image": "images/reasonable.png"
+    },
+    {
+      "id": "word071",
+      "english": "reliable",
+      "pronunciation": "/rɪˈlaɪəbəl/",
+      "partOfSpeech": "形容詞",
+      "translation": "信頼できる",
+      "image": "images/reliable.png"
+    },
+    {
+      "id": "word072",
+      "english": "essential",
+      "pronunciation": "/ɪˈsɛnʃəl/",
+      "partOfSpeech": "形容詞",
+      "translation": "不可欠な",
+      "image": "images/essential.png"
+    },
+    {
+      "id": "word073",
+      "english": "pendulum",
+      "pronunciation": "/ˈpɛndʒələm/",
+      "partOfSpeech": "名詞",
+      "translation": "振り子",
+      "image": "images/pendulum.png"
+    },
+    {
+      "id": "word074",
+      "english": "turbine",
+      "pronunciation": "/ˈtɝbaɪn/",
+      "partOfSpeech": "名詞",
+      "translation": "タービン",
+      "image": "images/turbine.png"
+    },
+    {
+      "id": "word075",
+      "english": "prism",
+      "pronunciation": "/ˈprɪzəm/",
+      "partOfSpeech": "名詞",
+      "translation": "プリズム",
+      "image": "images/prism.png"
+    },
+    {
+      "id": "word076",
+      "english": "glacier",
+      "pronunciation": "/ˈɡleɪʃər/",
+      "partOfSpeech": "名詞",
+      "translation": "氷河",
+      "image": "images/glacier.png"
+    },
+    {
+      "id": "word077",
+      "english": "fossil",
+      "pronunciation": "/ˈfɑsəl/",
+      "partOfSpeech": "名詞",
+      "translation": "化石",
+      "image": "images/fossil.png"
+    },
+    {
+      "id": "word078",
+      "english": "autonomy",
+      "pronunciation": "/ɔˈtɑnəmi/",
+      "partOfSpeech": "名詞",
+      "translation": "自主性",
+      "image": "images/autonomy.png"
+    },
+    {
+      "id": "word079",
+      "english": "integrity",
+      "pronunciation": "/ɪnˈtɛɡrəti/",
+      "partOfSpeech": "名詞",
+      "translation": "誠実",
+      "image": "images/integrity.png"
+    },
+    {
+      "id": "word080",
+      "english": "ambiguity",
+      "pronunciation": "/ˌæmbɪˈɡjuːəti/",
+      "partOfSpeech": "名詞",
+      "translation": "曖昧さ",
+      "image": "images/ambiguity.png"
+    },
+    {
+      "id": "word081",
+      "english": "paradox",
+      "pronunciation": "/ˈpɛrəˌdɑks/",
+      "partOfSpeech": "名詞",
+      "translation": "逆説",
+      "image": "images/paradox.png"
+    },
+    {
+      "id": "word082",
+      "english": "consciousness",
+      "pronunciation": "/ˈkɑnʃəsnəs/",
+      "partOfSpeech": "名詞",
+      "translation": "意識",
+      "image": "images/consciousness.png"
+    },
+    {
+      "id": "word083",
+      "english": "cognition",
+      "pronunciation": "/kɑɡˈnɪʃən/",
+      "partOfSpeech": "名詞",
+      "translation": "認知",
+      "image": "images/cognition.png"
+    },
+    {
+      "id": "word084",
+      "english": "excavate",
+      "pronunciation": "/ˈɛkskəˌveɪt/",
+      "partOfSpeech": "動詞",
+      "translation": "発掘する",
+      "image": "images/excavate.png"
+    },
+    {
+      "id": "word085",
+      "english": "dismantle",
+      "pronunciation": "/dɪsˈmæntəl/",
+      "partOfSpeech": "動詞",
+      "translation": "解体する",
+      "image": "images/dismantle.png"
+    },
+    {
+      "id": "word086",
+      "english": "propel",
+      "pronunciation": "/prəˈpɛl/",
+      "partOfSpeech": "動詞",
+      "translation": "推進する",
+      "image": "images/propel.png"
+    },
+    {
+      "id": "word087",
+      "english": "contemplate",
+      "pronunciation": "/ˈkɑntəmˌpleɪt/",
+      "partOfSpeech": "動詞",
+      "translation": "熟考する",
+      "image": "images/contemplate.png"
+    },
+    {
+      "id": "word088",
+      "english": "infer",
+      "pronunciation": "/ɪnˈfɝ/",
+      "partOfSpeech": "動詞",
+      "translation": "推論する",
+      "image": "images/infer.png"
+    },
+    {
+      "id": "word089",
+      "english": "hypothesize",
+      "pronunciation": "/haɪˈpɑθəˌsaɪz/",
+      "partOfSpeech": "動詞",
+      "translation": "仮説を立てる",
+      "image": "images/hypothesize.png"
+    },
+    {
+      "id": "word090",
+      "english": "rationalize",
+      "pronunciation": "/ˈræʃənəˌlaɪz/",
+      "partOfSpeech": "動詞",
+      "translation": "合理化する",
+      "image": "images/rationalize.png"
+    },
+    {
+      "id": "word091",
+      "english": "deduce",
+      "pronunciation": "/dɪˈduːs/",
+      "partOfSpeech": "動詞",
+      "translation": "演繹する",
+      "image": "images/deduce.png"
+    },
+    {
+      "id": "word092",
+      "english": "translucent",
+      "pronunciation": "/trænsˈluːsənt/",
+      "partOfSpeech": "形容詞",
+      "translation": "半透明の",
+      "image": "images/translucent.png"
+    },
+    {
+      "id": "word093",
+      "english": "porous",
+      "pronunciation": "/ˈpɔrəs/",
+      "partOfSpeech": "形容詞",
+      "translation": "多孔質の",
+      "image": "images/porous.png"
+    },
+    {
+      "id": "word094",
+      "english": "ambiguous",
+      "pronunciation": "/æmˈbɪɡjuəs/",
+      "partOfSpeech": "形容詞",
+      "translation": "曖昧な",
+      "image": "images/ambiguous.png"
+    },
+    {
+      "id": "word095",
+      "english": "inevitable",
+      "pronunciation": "/ɪnˈɛvɪtəbəl/",
+      "partOfSpeech": "形容詞",
+      "translation": "避けられない",
+      "image": "images/inevitable.png"
+    },
+    {
+      "id": "word096",
+      "english": "plausible",
+      "pronunciation": "/ˈplɔzəbəl/",
+      "partOfSpeech": "形容詞",
+      "translation": "もっともらしい",
+      "image": "images/plausible.png"
+    },
+    {
+      "id": "word097",
+      "english": "diagonally",
+      "pronunciation": "/daɪˈæɡənəli/",
+      "partOfSpeech": "副詞",
+      "translation": "斜めに",
+      "image": "images/diagonally.png"
+    },
+    {
+      "id": "word098",
+      "english": "clockwise",
+      "pronunciation": "/ˈklɑkˌwaɪz/",
+      "partOfSpeech": "副詞",
+      "translation": "時計回りに",
+      "image": "images/clockwise.png"
+    },
+    {
+      "id": "word099",
+      "english": "implicitly",
+      "pronunciation": "/ɪmˈplɪsətli/",
+      "partOfSpeech": "副詞",
+      "translation": "それとなく",
+      "image": "images/implicitly.png"
+    },
+    {
+      "id": "word100",
+      "english": "hypothetically",
+      "pronunciation": "/ˌhaɪpəˈθɛtɪkli/",
+      "partOfSpeech": "副詞",
+      "translation": "仮説上は",
+      "image": "images/hypothetically.png"
+    }
+  ]
+}

@@ -1,0 +1,503 @@
+/* 色、文字、ページ全体の基本設定 */
+:root {
+  color-scheme: light;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", sans-serif;
+  color: #24364b;
+  background: #f3f8fc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --color-blue: #3978b8;
+  --color-blue-dark: #2e639a;
+  --color-blue-light: #eaf4fc;
+  --color-border: #d8e5f0;
+  --color-muted: #61758a;
+  --shadow-card: 0 12px 36px rgb(40 79 112 / 9%);
+}
+
+/* ブラウザーごとの余白とサイズ計算をそろえます。 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(ellipse at 50% 0%, #e3f1fc 0, transparent 42rem),
+    #f3f8fc;
+}
+
+/* JavaScriptがhidden属性を付けた画面や領域は常に非表示にします。 */
+[hidden] {
+  display: none !important;
+}
+
+/* ページ上部のタイトル */
+.app-header {
+  padding: 24px 20px 8px;
+  text-align: center;
+}
+
+.app-title {
+  margin: 0;
+  color: #2d5f8f;
+  font-size: clamp(1.35rem, 3vw, 1.8rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+/* 画面を中央に配置し、読みやすい幅を保ちます。 */
+.app-main {
+  width: min(100% - 32px, 720px);
+  margin: 30px auto 64px;
+}
+
+.screen {
+  padding: clamp(24px, 5vw, 48px);
+  border: 1px solid rgb(216 229 240 / 85%);
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: var(--shadow-card);
+}
+
+.screen h2 {
+  margin: 0 0 12px;
+  color: #2b4865;
+  font-size: clamp(1.35rem, 3vw, 1.7rem);
+  line-height: 1.5;
+  text-align: center;
+}
+
+.screen > p {
+  margin: 0 0 28px;
+  color: var(--color-muted);
+  line-height: 1.8;
+  text-align: center;
+}
+
+/* 読み込み・保存・音声に関する利用者向けメッセージ */
+.app-message {
+  margin: 0 0 16px;
+  padding: 14px 18px;
+  border: 1px solid #e7c8c8;
+  border-radius: 12px;
+  background: #fff5f5;
+  color: #8a3434;
+  line-height: 1.6;
+}
+
+/* 設定画面の選択肢 */
+.display-options {
+  display: grid;
+  gap: 12px;
+  margin: 0 0 28px;
+  padding: 20px;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  background: #fbfdff;
+}
+
+.display-options legend {
+  padding: 0 8px;
+  color: #415c77;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.display-option {
+  display: flex;
+  min-height: 54px;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: #fff;
+  transition: border-color 160ms ease, background-color 160ms ease;
+}
+
+.display-option:focus-within,
+.display-option:has(input:checked) {
+  border-color: #83b7e3;
+  background: var(--color-blue-light);
+}
+
+.display-option input {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 auto;
+  margin: 0;
+  accent-color: var(--color-blue);
+  cursor: pointer;
+}
+
+.display-option label {
+  flex: 1;
+  color: #304b66;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* 共通ボタンとキーボード操作時のフォーカス表示 */
+.button {
+  min-height: 48px;
+  padding: 11px 20px;
+  border: 1px solid #cbdbea;
+  border-radius: 12px;
+  background: #fff;
+  color: #35536f;
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  cursor: pointer;
+  transition: background-color 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+.button:hover {
+  border-color: #9dbbd5;
+  background: #f4f9fd;
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.button:focus-visible,
+.display-option input:focus-visible {
+  outline: 3px solid #8fc3ec;
+  outline-offset: 3px;
+}
+
+.button:disabled {
+  border-color: #d8e1e8;
+  background: #edf1f4;
+  color: #8997a3;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.button-primary {
+  border-color: var(--color-blue);
+  background: var(--color-blue);
+  color: #fff;
+}
+
+.button-primary:hover {
+  border-color: var(--color-blue-dark);
+  background: var(--color-blue-dark);
+}
+
+.settings-screen > .button-primary {
+  display: block;
+  width: 100%;
+  min-height: 54px;
+  font-size: 1.05rem;
+}
+
+/* 学習画面の単語カードと各情報 */
+.learning-heading-row {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.learning-heading-row h2 {
+  margin: 0;
+  padding: 8px 112px;
+}
+
+.word-menu-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.word-menu-button {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  color: #35536f;
+  white-space: nowrap;
+}
+
+.word-menu-button > span:first-child {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.word-menu-button-label {
+  font-size: 0.9rem;
+}
+
+.word-navigation-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: min(320px, calc(100vw - 48px));
+  max-height: min(65vh, 520px);
+  overflow: auto;
+  padding: 8px;
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 12px 32px rgb(40 79 112 / 18%);
+}
+
+.word-navigation-category {
+  border-bottom: 1px solid #e8eff5;
+}
+
+.word-navigation-category:last-child {
+  border-bottom: 0;
+}
+
+.word-navigation-category summary {
+  padding: 12px;
+  border-radius: 8px;
+  color: #304b66;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.word-navigation-category summary:hover,
+.word-navigation-category summary:focus-visible {
+  background: var(--color-blue-light);
+}
+
+.word-navigation-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px;
+  margin: 0;
+  padding: 0 8px 10px;
+  list-style: none;
+}
+
+.word-navigation-item {
+  width: 100%;
+  min-height: 40px;
+  padding: 8px 10px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: transparent;
+  color: #35536f;
+  font: inherit;
+  text-align: left;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+}
+
+.word-navigation-item:hover,
+.word-navigation-item:focus-visible {
+  border-color: #c8deef;
+  background: var(--color-blue-light);
+  outline: none;
+}
+
+.word-navigation-item[aria-current="true"] {
+  border-color: #a9cce8;
+  background: #e4f1fb;
+  color: #245783;
+  font-weight: 700;
+}
+
+.word-navigation-empty {
+  grid-column: 1 / -1;
+  padding: 8px 10px;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+.word-card {
+  display: grid;
+  justify-items: center;
+  gap: 16px;
+  min-height: 260px;
+  padding: clamp(22px, 5vw, 36px);
+  border: 1px solid #dcebf7;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #f8fcff, #edf6fd);
+  text-align: center;
+}
+
+.word-label {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.word-number {
+  margin: 0;
+  padding: 5px 12px;
+  border: 1px solid #d2e5f4;
+  border-radius: 999px;
+  background: #fff;
+  color: #52718e;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.english-word {
+  overflow-wrap: anywhere;
+  margin: 0;
+  color: #245783;
+  font-size: clamp(2.5rem, 9vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.pronunciation-label {
+  margin: -6px 0 -12px;
+  color: var(--color-muted);
+  font-size: 0.82rem;
+}
+
+.word-pronunciation {
+  margin: 0;
+  color: #435f79;
+  font-size: clamp(1.1rem, 4vw, 1.4rem);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+
+.word-pronunciation-details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 8px 18px;
+}
+
+.word-part-of-speech {
+  margin: 0;
+  padding: 4px 10px;
+  border: 1px solid #d2e5f4;
+  border-radius: 999px;
+  background: #fff;
+  color: #52718e;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.translation-area,
+.image-area {
+  width: 100%;
+  max-width: 480px;
+}
+
+.detail-heading {
+  margin: 8px 0 6px;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.japanese-translation {
+  margin: 0;
+  color: #304b66;
+  font-size: clamp(1.2rem, 4vw, 1.55rem);
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.word-image {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  max-height: 320px;
+  aspect-ratio: 1 / 1;
+  margin: 12px auto 0;
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  background: #fff;
+  object-fit: contain;
+}
+
+.image-placeholder {
+  margin: 12px auto 0;
+  padding: 24px 16px;
+  border: 1px dashed #cbdbea;
+  border-radius: 12px;
+  background: #fff;
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+/* 学習中の操作ボタンを均等に配置します。 */
+.learning-controls {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.learning-controls .button {
+  padding-inline: 12px;
+}
+
+/* スマートフォンでは余白とボタン配置を調整します。 */
+@media (max-width: 560px) {
+  .app-header {
+    padding-top: 20px;
+  }
+
+  .app-main {
+    width: min(100% - 24px, 720px);
+    margin-top: 20px;
+  }
+
+  .screen {
+    padding: 24px 18px;
+    border-radius: 18px;
+  }
+
+  .display-options {
+    padding: 16px 12px;
+  }
+
+  .learning-controls {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .learning-heading-row {
+    padding-top: 48px;
+  }
+
+  .learning-heading-row h2 {
+    padding: 0;
+  }
+
+  .word-menu-container {
+    top: 0;
+    right: 0;
+  }
+
+  .learning-controls .button {
+    min-height: 50px;
+  }
+}
+
+/* 動きを控える設定を利用している場合はトランジションを無効にします。 */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
